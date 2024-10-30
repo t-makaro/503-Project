@@ -148,4 +148,6 @@ dmypy.json
 cython_debug/
 
 # data folder
+# include the folder but nothing in it.
 data/*.csv
+!data/
