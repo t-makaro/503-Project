@@ -1,0 +1,5 @@
+google-api-python-client
+numpy
+pandas
+matplotlib
+ipykernel
