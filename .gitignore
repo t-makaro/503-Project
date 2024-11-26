@@ -133,6 +133,10 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# jupyter things
+.virtual_documents/
+.jupyter/
+
 # mypy
 .mypy_cache/
 .dmypy.json
