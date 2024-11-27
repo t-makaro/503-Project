@@ -20,7 +20,12 @@ dataset_names = [file.removesuffix('.csv') for file in files]
 
 data_folder = '../data/'
 
-unwanted_cols = ['Unnamed: 0', 'id', 'hashedVideoID', 'service', 'userAgent']
+# variables that end with an _ are for processing multiple files into one merged file
+unwanted_cols_ = ['Unnamed: 0', 'id', 'hashedVideoID', 'service', 'userAgent']
+unwanted_cols = unwanted_cols_ + ['UUID', # unique to every segment
+                                  'description', # almost all NaNs
+                                  'incorrectVotes', # literally all 1
+                                 ]
 
 sb_data_file = data_folder+'merged_data'+'.csv'
 
@@ -44,7 +49,7 @@ dtypes_ = {
     'incorrectVotes': 'int',
     #'timeSubmitted': 'int', # commented due to need to use converter for import
     'view': 'int',
-    'videoDuraction': 'float',
+    'videoDuration': 'float',
     'hidden': 'int',
     'reputation': 'float',
     'shadowHidden': 'boolean',
