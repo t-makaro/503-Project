@@ -1,4 +1,5 @@
-# for grabbing from SMB file server mapped to L: (LAN ONLY). Otherwise use the 3rd party mirror.
+# for grabbing from SMB file server mapped to L: (LAN ONLY). 
+# Otherwise use the 3rd party mirror.
 mirror_url = 'L:\\sb-mirror\\' #'https://sb.minibomba.pro/mirror/' 
 files = [# 'categoryVotes.csv',
          # 'lockCategories.csv',
